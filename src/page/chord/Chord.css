@@ -1,0 +1,75 @@
+.containerChord{
+    display:flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.containerChord button{
+    height: 3.5vh;
+}
+
+.containerPaper{
+        width: 63vw;
+        min-height: 100vh;
+    
+        color: black;
+        margin-top: 5px;
+        padding: 3vh 2vw;
+        background-color: whitesmoke;
+
+}
+.containerTitleChord{
+    display:flex;
+    align-items: center;
+}
+.containerTitleChord span{
+    margin-left: 1.5vw;
+}
+.containerTitleChord span h3{
+    line-height: 1vh;
+}
+.containerTitleChord span p{
+    line-height: 0vh;
+}
+
+.imageChord{
+    height: 4vh;
+    width: 2vw;
+    background-color: bisque;
+    padding: 2vh 1vw;
+    border-radius: 10px;
+    border: 1px solid rgb(249, 193, 126);
+    box-shadow: 1px 1px rgb(149, 149, 149);
+}
+
+.containerButtonCategory3 button{
+    margin: 0 1vw;
+    width: 3vw;
+    height: 4vh;
+    font-weight: bold;
+    background-color: bisque;
+    border: 1px solid rgb(249, 193, 126);
+    box-shadow: 1px 1px rgb(149, 149, 149);
+}
+
+.containerCategory2{
+    display:flex;
+    flex-direction: column;
+    align-items : left;
+    padding-bottom: 2vh;
+    background-color: bisque;
+    border: 1px solid rgb(249, 193, 126);
+    box-shadow: 1px 1px rgb(149, 149, 149);
+    border-radius: 10px;
+}
+.containerCategory2 h2{
+    text-align: center;
+}
+.containerCategory2 a{
+    margin: 0.5vh 20vw;
+    
+    text-align: left;
+    border-bottom: 1px dotted black;
+}

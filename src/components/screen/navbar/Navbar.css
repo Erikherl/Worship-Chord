@@ -1,0 +1,38 @@
+nav{
+    background-color:bisque;
+    color:black;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 5px rgb(249, 193, 126);
+
+    padding-left: 5vw;
+    padding-right:2vw;
+    height: 8vh;
+    
+}
+nav span{
+    width: 47%;
+    height: 100%;
+    display:flex;
+}
+nav span a{
+    display:flex;
+    align-items: center;
+    margin: 0 1vw;
+    font-weight: bold;
+}
+nav span a:hover{
+    background-color: rgb(254, 239, 220);
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.navbarLogo{
+    width: 3.5vw;
+    height: auto;
+    margin-top: -0.3vh;
+}

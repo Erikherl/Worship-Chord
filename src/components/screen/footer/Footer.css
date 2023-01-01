@@ -1,0 +1,9 @@
+footer{
+    background-color: bisque;
+    color:black;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 3vh 0;
+    box-shadow: 1px 7px 10px 12px rgb(249, 193, 126);
+}

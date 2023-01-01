@@ -1,0 +1,9 @@
+.container{
+    width: 63vw;
+    min-height: 100vh;
+
+    color: black;
+    margin-top: 5px;
+    padding: 5vh 2vw;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,28 @@
+.aboutContainer{
+    margin-top: 5vh;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.imageAbout{
+    width: 30vw;
+}
+
+.aboutContainer div{
+    margin-top: -4vh;
+    width: 45%;
+}
+.containerAside ul{
+    margin-left: -2vw;
+}
+
+.containerAside ul li{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.containerAside ul li p{
+    text-decoration: none;
+    margin-left: 1vw;
+}

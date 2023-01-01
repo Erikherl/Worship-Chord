@@ -1,0 +1,20 @@
+.containerCategorySection{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh 0;
+}
+.containerCategorySection p{
+    line-height: 0;
+}
+
+
+.containerCategorySection button{ 
+    margin: 0 1vw;
+    width: 5vw;
+    height: 4vh;
+    font-weight: bold;
+    background-color: bisque;
+    border: 1px solid rgb(249, 193, 126);
+    box-shadow: 1px 1px rgb(149, 149, 149);
+}
