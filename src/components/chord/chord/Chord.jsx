@@ -174,8 +174,16 @@ class Chord extends Component {
               fontSize={config.title.fontSize}
               x={config.title.x}
               y={config.title.y}
+              onMouseOver={ () => {
+                {if(name == "Em"){
+                  <div>
+                  <img src={require("../../../assets/Em.jpeg")}/>
+                  <h1>test</h1></div>
+                }}
+                }}
               >
           {name}
+          {}
         </text>
 
         {/*Crosses on the top of left*/}

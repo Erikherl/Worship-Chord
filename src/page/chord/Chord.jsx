@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Chord.css"
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 import Chord from '../../components/chord/Chord'
 
@@ -17,22 +17,22 @@ const chord = () => {
         </div>
         <hr style={{border:"1px solid rgb(249, 193, 126)"}}></hr>
         <div className="containerButtonCategory3" style={{marginLeft:"-1vw"}}>
-          <button>A</button>
-          <button>Bb</button>
-          <button>B</button>
-          <button>C</button>
-          <button>C#</button>
-          <button>D</button>
-          <button>D#</button>
-          <button>E</button>
-          <button>F</button>
-          <button>F#</button>
-          <button>G</button>
-          <button>G#</button>
+          <button><Link to="A">A</Link></button>
+          <button><Link to="Bb">Bb</Link></button>
+          <button><Link to="B">B</Link></button>
+          <button><Link to="C">C</Link></button>
+          <button><Link to="Hs">C#</Link></button>
+          <button><Link to="D">D</Link></button>
+          <button><Link to="Ds">D#</Link></button>
+          <button><Link to="E">E</Link></button>
+          <button><Link to="F">F</Link></button>
+          <button><Link to="Fs">F#</Link></button>
+          <button><Link to="G">G</Link></button>
+          <button><Link to="Gs">G#</Link></button>
         </div>
         <hr style={{border:"1px solid rgb(249, 193, 126)"}}></hr>
         <div>
-          <Chord></Chord>
+          <Outlet></Outlet>
         </div>
         <hr style={{margin:"5vh 0"}}></hr>
         <div className='containerCategory2'>

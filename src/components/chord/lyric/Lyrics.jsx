@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, useState } from 'react';
 import PropTypes from 'prop-types';
 
 // Import custom components
@@ -14,6 +14,7 @@ import chords from '../../../assets/chords';
 const chordRegExp = /(?:\[([^\]]*)])?(.)?([^[]*)/g;
 const englishRegExp = /[a-zA-Z]/;
 
+
 const searchChord = (name) => {
   let chordsLen = chords.length;
 
@@ -24,12 +25,14 @@ const searchChord = (name) => {
   }
 };
 
+
 export default class Lyrics extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       hover: false
     };
+
   }
 
   onHover = () => {
@@ -102,15 +105,28 @@ export default class Lyrics extends PureComponent {
                     {
                       isEmbedChord ?
                       <span className="ge-anchor-chordimg">
-                        <Chord chord={chord} options={{size: 'large'}}/>
+                        <Chord 
+                                      onMouseOver={ () => {
+                                        {if(chord.name == "Em"){
+                                          <div>
+                  <img src={require("../../../assets/Em.jpeg")}/>
+                  <h1>test</h1></div>
+                                        }}
+                                        }}
+                        chord={chord} options={{size: 'small'}}/>
+                       
                       </span>
                       :
-                      <div onMouseEnter={this.onHover}
-                      onMouseLeave={this.onHover}>
-                        {this.hover && <Chord chord={chord} options={{size: 'large'}}></Chord>}
-                        <span className="ge-anchor-chordname">{chordData.name}</span>
-                        
+                      <div>
+                        <span className="ge-anchor-chordname" 
+                        onMouseOver={() => {
+                          return(
+                            <span className="ge-anchor-chordimg" style={{backgroundColor:"black", height:"20"}}>
+                              <Chord chord={chord} options={{size: 'large'}}/>
+                            </span>
+                        )}}>{chordData.name}</span>
                       </div>
+                      
                     }
                     {/* Anchor Text */}
                     <span>{chordData.anchor}</span>

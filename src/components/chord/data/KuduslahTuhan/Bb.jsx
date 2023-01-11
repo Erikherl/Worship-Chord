@@ -3,11 +3,21 @@ import Lyrics from '../../lyric/Lyrics'
 
 const Bb = () => {
   return (
-    <div>
-        <p><strong>Bait :</strong></p>
-      <Lyrics isEmbedChord={false}>Ku Dat[Gm]ang Tuhan{"\n"}Dalam Hadi[Dm]ratMu{"\n"}[Eb]Berhiaskan Kekudu[F]san{"\n"}Selur[Gm]uh Surga, Sujud Men[Dm]yembahmu{"\n"}[Eb]Ku Tersung[Cm]kur Dan Berse[F]ru{"\n"}</Lyrics>
+    <div>    
+      <p><strong>Bait :</strong></p>
+      <Lyrics isEmbedChord={true}>Ku Dat[Gm]ang Tuhan</Lyrics>
+      <Lyrics isEmbedChord={true}>Dalam Hadi[Dm]ratMu</Lyrics>
+      <Lyrics isEmbedChord={true}>[Eb]Berhiaskan Kekudu[F]san</Lyrics>
+      <Lyrics isEmbedChord={true}>Selur[Gm]uh Surga, Sujud Men[Dm]yembahmu</Lyrics>
+      <Lyrics isEmbedChord={true}>[Eb]Ku Tersung[Cm]kur Dan Berse[F]ru</Lyrics>
+
       <p><strong>Reff :</strong></p>
-      <Lyrics isEmbedChord={false}>Kudus, [Bb]Kuduslah{"\n"}Ku[Cm]duslah Tuhan{"\n"}[F]Allah Semesta [Bb]Alam{"\n"}Kudus, [Bb]Kuduslah{"\n"}Ku[Cm]duslah Tuhan{"\n"}[Eb]Surga Bum[F]i Menyemb[Bb]ahmu</Lyrics>
+      <Lyrics isEmbedChord={true}>Kudus, [Bb]Kuduslah</Lyrics>
+      <Lyrics isEmbedChord={true}>Ku[Cm]duslah Tuhan</Lyrics>
+      <Lyrics isEmbedChord={true}>[F]Allah Semesta [Bb]Alam</Lyrics>
+      <Lyrics isEmbedChord={true}>Kudus, [Bb]Kuduslah</Lyrics>
+      <Lyrics isEmbedChord={true}>Ku[Cm]duslah Tuhan</Lyrics>
+      <Lyrics isEmbedChord={true}>[Eb]Surga Bum[F]i Menyemb[Bb]ahmu</Lyrics>
     </div>
   )
 }
