@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Chord from '../chord/Chord';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import ReactDOMServer from 'react-dom/server';
+import _uniqueId from 'lodash/uniqueId';
 
 // Import styles from css
 import './styles.css';
@@ -48,6 +49,7 @@ export default class Lyrics extends PureComponent {
   mapChords = (line) => {
     let chords = [];
     let offset = 2;
+    let bjir = Math.floor(Math.random() * (100 - 0 + 1)) + 0
 
     // Extract information from a piece of lyrics
     line.replace(chordRegExp, (match, chord, anchor, extra, index) => {
@@ -55,6 +57,7 @@ export default class Lyrics extends PureComponent {
       // Filter empty line
       if (chord || (anchor && extra)) {
         chords.push({
+          id:bjir,
           name: chord,
           line: line,
           index: chord ? chord.length + index + offset : -1,
@@ -112,14 +115,15 @@ export default class Lyrics extends PureComponent {
                        
                       </span>
                       :
-                      <div>                        
-                        <span className="ge-anchor-chordname" id="my-element" data-tooltip-html={ReactDOMServer.renderToString(<img src={require("../../../assets/A.jpeg")} style={{width:"5vw"}}></img>)}>
-                          {chordData.name}
+                        <span className="ge-anchor-chordname" id={chordData.id} data-tooltip-html={ReactDOMServer.renderToString(
                         
+                        <img src={require("../../../assets/A.jpeg")} style={{width:"5vw"}}></img>
+                        )}>
+                          {chordData.name}
+                          {console.log(chordData.id)}
+                        <ReactTooltip anchorId={chordData.id}>
+                          </ReactTooltip>
                         </span>
-                        <ReactTooltip anchorId="my-element"  />
-
-                      </div>
                       
                     }
                     {/* Anchor Text */}
