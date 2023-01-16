@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 // Import custom components
 import Chord from '../chord/Chord';
+import { Tooltip as ReactTooltip } from 'react-tooltip'
+import ReactDOMServer from 'react-dom/server';
 
 // Import styles from css
 import './styles.css';
@@ -93,6 +95,7 @@ export default class Lyrics extends PureComponent {
             // Map each chord data to the lyrics
             this.mapChords(children).map((chordData, index) => {
               let chord = searchChord(chordData.name);
+              let nama = chordData.name
 
               return (
               chordData.index > 0 ?
@@ -105,26 +108,17 @@ export default class Lyrics extends PureComponent {
                     {
                       isEmbedChord ?
                       <span className="ge-anchor-chordimg">
-                        <Chord 
-                                      onMouseOver={ () => {
-                                        {if(chord.name == "Em"){
-                                          <div>
-                  <img src={require("../../../assets/Em.jpeg")}/>
-                  <h1>test</h1></div>
-                                        }}
-                                        }}
-                        chord={chord} options={{size: 'small'}}/>
+                        <Chord chord={chord} options={{size: 'small'}}/>
                        
                       </span>
                       :
-                      <div>
-                        <span className="ge-anchor-chordname" 
-                        onMouseOver={() => {
-                          return(
-                            <span className="ge-anchor-chordimg" style={{backgroundColor:"black", height:"20"}}>
-                              <Chord chord={chord} options={{size: 'large'}}/>
-                            </span>
-                        )}}>{chordData.name}</span>
+                      <div>                        
+                        <span className="ge-anchor-chordname" id="my-element" data-tooltip-html={ReactDOMServer.renderToString(<img src={require("../../../assets/A.jpeg")} style={{width:"5vw"}}></img>)}>
+                          {chordData.name}
+                        
+                        </span>
+                        <ReactTooltip anchorId="my-element"  />
+
                       </div>
                       
                     }

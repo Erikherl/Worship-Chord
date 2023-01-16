@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Homepage.css"
+import { Tooltip as ReactTooltip } from 'react-tooltip'
+
 
 import Hero from '../../components/homepage/Hero'
 import Main from '../../components/homepage/Main'
