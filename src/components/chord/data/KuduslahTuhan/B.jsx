@@ -5,19 +5,19 @@ const B = () => {
   return (
     <div>
       <p><strong>Bait :</strong></p>
-      <Lyrics isEmbedChord={true}>Ku Dat[G#m]ang Tuhan</Lyrics>
-      <Lyrics isEmbedChord={true}>Dalam Hadi[D#m]ratMu</Lyrics>
-      <Lyrics isEmbedChord={true}>[E]Berhiaskan Kekudu[Fs]san</Lyrics>
-      <Lyrics isEmbedChord={true}>Selur[G#m]uh Surga, Sujud Men[D#m]yembahmu</Lyrics>
-      <Lyrics isEmbedChord={true}>[E]Ku Tersung[C#m]kur Dan Berse[F#]ru</Lyrics>
+      <Lyrics isEmbedChord={false}>Ku Dat[G#m]ang Tuhan</Lyrics>
+      <Lyrics isEmbedChord={false}>Dalam Hadi[D#m]ratMu</Lyrics>
+      <Lyrics isEmbedChord={false}>[E]Berhiaskan Kekudu[Fs]san</Lyrics>
+      <Lyrics isEmbedChord={false}>Selur[G#m]uh Surga, Sujud Men[D#m]yembahmu</Lyrics>
+      <Lyrics isEmbedChord={false}>[E]Ku Tersung[C#m]kur Dan Berse[F#]ru</Lyrics>
 
       <p><strong>Reff :</strong></p>
-      <Lyrics isEmbedChord={true}>Kudus, [B]Kuduslah</Lyrics>
-      <Lyrics isEmbedChord={true}>Ku[C#m]duslah Tuhan</Lyrics>
-      <Lyrics isEmbedChord={true}>[F#]Allah Semesta [B]Alam</Lyrics>
-      <Lyrics isEmbedChord={true}>Kudus, [B]Kuduslah</Lyrics>
-      <Lyrics isEmbedChord={true}>Ku[C#m]duslah Tuhan</Lyrics>
-      <Lyrics isEmbedChord={true}>[E]Surga Bum[F#]i Menyemb[B]ahmu</Lyrics>
+      <Lyrics isEmbedChord={false}>Kudus, [B]Kuduslah</Lyrics>
+      <Lyrics isEmbedChord={false}>Ku[C#m]duslah Tuhan</Lyrics>
+      <Lyrics isEmbedChord={false}>[F#]Allah Semesta [B]Alam</Lyrics>
+      <Lyrics isEmbedChord={false}>Kudus, [B]Kuduslah</Lyrics>
+      <Lyrics isEmbedChord={false}>Ku[C#m]duslah Tuhan</Lyrics>
+      <Lyrics isEmbedChord={false}>[E]Surga Bum[F#]i Menyemb[B]ahmu</Lyrics>
     </div>
   )
 }
